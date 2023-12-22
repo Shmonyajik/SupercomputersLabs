@@ -38,13 +38,13 @@ int main(int argc, char** argv)
         }
     }
 
-    // Измерение времени для вашей реализации myScatter
+    // Измерение времени для реализации myScatter
     double start_time_myScatter = MPI_Wtime();
 
-    // Ваша реализация myScatter
+    // реализация myScatter
     myScatter(data, 1, &received, 1, size, rank);
 
-    // Измерение времени для вашей реализации myScatter
+    // Измерение времени для реализации myScatter
     double end_time_myScatter = MPI_Wtime();
 
     // Измерение времени для MPI_Scatter
